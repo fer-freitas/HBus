@@ -16,7 +16,7 @@ namespace UBus.WebApi.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult Get(Guid rotaId)
         {
             return new ObjectResult(_veiculoAppService.ObterItensAdicionaisPorRota(rotaId));
